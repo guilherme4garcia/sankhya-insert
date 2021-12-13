@@ -41,10 +41,10 @@ async function xml(login, password, entity, fields) {
     )
       .then(data => table(entity, data, fields))
       .then(xml => {
-        sankhyaApiHelper.post(
-          '/service.sbr?serviceName=CRUDServiceProvider.saveRecord',
-          xml
-        )
+        //sankhyaApiHelper.post(
+        //  '/service.sbr?serviceName=CRUDServiceProvider.saveRecord',
+        //  xml
+        //)
 
         console.log(xml)
         fs.writeFile('xml.xml', xml, err => {

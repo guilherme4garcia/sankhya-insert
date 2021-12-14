@@ -13,7 +13,7 @@ npm install sankhya-helper
 
 The function takes 4 parameters as inputs: Sankhya login, password, table name and a array with data for each column. Must be in the same order displayed in the table.
 
-```sh
+```js
 const insert = require('sankhya-insert')
 
 const login = 'username'
